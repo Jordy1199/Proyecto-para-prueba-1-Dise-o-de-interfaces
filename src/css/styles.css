@@ -19,7 +19,7 @@ body {
     background-color: #ffffff;
 }
 
-/* ================= HEADER ================= */
+/* ==== HEADER ==== */
 .header {
     background-color: var(--epn-blue);
     color: white;
@@ -64,7 +64,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* ================= MAIN CONTENT ================= */
+/* ==== MAIN CONTENT ==== */
 .main-content {
     padding: 20px;
     max-width: 600px;
