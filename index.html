@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPN Accesible</title>
+    <!-- Asumiendo que tienes normalize.css en la ruta indicada -->
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <!-- FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- SPRINT 0 y 1: Header -->
+    <header class="header">
+        <div class="header-logo">
+            <div class="logo-circle">
+                <i class="fa-solid fa-wheelchair"></i>
+            </div>
+        </div>
+        <div class="header-title">
+            <h1>EPN Accesible</h1>
+            <p>Gestion de Espacios Preferenciales</p>
+        </div>
+        <div class="header-user">
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+    </header>
+
+    <!-- SPRINT 0 y 1: Main Structure -->
+    <main class="main-content">
+        
+        <!-- ESTADO GENERAL -->
+        <section class="section">
+            <h2 class="section-title">Estado general - Hoy</h2>
+            <div class="status-grid">
+                <div class="status-card active-green">
+                    <div class="status-icon icon-green"><i class="fa-solid fa-wheelchair"></i></div>
+                    <div class="status-info text-green">
+                        <span class="status-number">12</span>
+                        <span class="status-label">Disponibles</span>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon icon-red"><i class="fa-solid fa-wheelchair"></i></div>
+                    <div class="status-info text-red">
+                        <span class="status-number">8</span>
+                        <span class="status-label">Ocupados</span>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="status-icon icon-blue"><i class="fa-regular fa-calendar-days"></i></div>
+                    <div class="status-info text-blue">
+                        <span class="status-number">5</span>
+                        <span class="status-label text-sm">Reservas<br>Activas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TIPOS DE ESPACIOS -->
+        <section class="section">
+            <h2 class="section-title">Tipos de espacios</h2>
+            <div class="types-grid">
+                <div class="type-card">
+                    <div class="type-icon"><i class="fa-solid fa-car"></i></div>
+                    <div class="type-content">
+                        <div class="badge-green">6 disp.</div>
+                        <p>Parqueaderos<br>Accesibles</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon"><i class="fa-solid fa-chair"></i></div>
+                    <div class="type-content">
+                        <div class="badge-green">6 disp.</div>
+                        <p>Asientos<br>Preferenciales</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon"><i class="fa-solid fa-elevator"></i></div>
+                    <div class="type-content">
+                        <div class="badge-green">6 disp.</div>
+                        <p>Ascensores<br>Accesibles</p>
+                    </div>
+                </div>
+                <div class="type-card">
+                    <div class="type-icon"><i class="fa-solid fa-ramp-loading"></i></div>
+                    <div class="type-content">
+                        <div class="badge-green">6 disp.</div>
+                        <p>Rutas y Rampas</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- BUSCAR ESPACIO -->
+        <section class="section">
+            <h2 class="section-title">Buscar Espacio</h2>
+            
+            <div class="search-filters">
+                <div class="filter-row">
+                    <i class="fa-regular fa-building filter-icon"></i>
+                    <span class="filter-label">Campus</span>
+                    <span class="filter-value">EPN - Ladron de Guevara</span>
+                    <i class="fa-solid fa-arrow-down filter-arrow"></i>
+                </div>
+                <div class="filter-row">
+                    <i class="fa-solid fa-location-dot filter-icon"></i>
+                    <span class="filter-label">Facultad / Edificio</span>
+                    <span class="filter-value">Facultad de Ingenieria en Sistemas</span>
+                    <i class="fa-solid fa-arrow-down filter-arrow"></i>
+                </div>
+                <div class="filter-row">
+                    <i class="fa-solid fa-tags filter-icon"></i>
+                    <span class="filter-label">Tipo de Espacio</span>
+                    <span class="filter-value">Parqueadero accesible</span>
+                    <i class="fa-solid fa-arrow-down filter-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Tarjeta de Resultado -->
+            <div class="result-card">
+                <div class="result-header">
+                    <h3>Parqueadero P1</h3>
+                </div>
+                <div class="result-body">
+                    <div class="result-details">
+                        <div class="detail-icons">
+                            <i class="fa-regular fa-building"></i>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <i class="fa-regular fa-clock"></i>
+                        </div>
+                        <div class="detail-texts">
+                            <p><strong>Capacidad:</strong> 2 espacios</p>
+                            <p><strong>Ubicacion:</strong> Planta Baja</p>
+                            <p><strong>Horario:</strong> 06h00 - 22h00</p>
+                            <p class="status-available"><span class="dot"></span> Disponible</p>
+                        </div>
+                    </div>
+                    <div class="result-map">
+                        <!-- Reemplazar src con tu imagen real de mapa si la tienes en src/images/ -->
+                        <img src="https://via.placeholder.com/150x100.png?text=Mapa+EPN" alt="Mapa de ubicación">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RESERVAR ESPACIO -->
+        <section class="section">
+            <h2 class="section-title">Reservar Espacio</h2>
+            
+            <div class="reservation-form">
+                <div class="form-grid">
+                    <!-- Fecha -->
+                    <div class="form-item">
+                        <i class="fa-solid fa-calendar-days icon-left"></i>
+                        <span class="label">Fecha:</span>
+                        <span class="value"><strong>24 / 03 / 2026</strong></span>
+                        <i class="fa-regular fa-calendar icon-right"></i>
+                    </div>
+                    <!-- Hora de Inicio -->
+                    <div class="form-item">
+                        <i class="fa-regular fa-clock icon-left"></i>
+                        <span class="label">Hora de Inicio:</span>
+                        <span class="value"><strong>10:00</strong></span>
+                        <i class="fa-solid fa-arrow-down icon-right"></i>
+                    </div>
+                    <!-- Hora de Fin -->
+                    <div class="form-item">
+                        <i class="fa-regular fa-clock icon-left"></i>
+                        <span class="label">Hora de Fin:</span>
+                        <span class="value"><strong>12:00</strong></span>
+                        <i class="fa-solid fa-arrow-down icon-right"></i>
+                    </div>
+                    <!-- Tipo de Discapacidad -->
+                    <div class="form-item">
+                        <i class="fa-solid fa-wheelchair icon-left"></i>
+                        <div class="column-text">
+                            <span class="label text-xs">Tipo de Discapacidad (opcional)</span>
+                            <span class="value"><strong>Fisica</strong></span>
+                        </div>
+                    </div>
+                    <!-- Observaciones -->
+                    <div class="form-item full-width no-border">
+                        <i class="fa-solid fa-list-ul icon-left"></i>
+                        <span class="label">Observaciones (opcional)</span>
+                        <span class="value placeholder">Ej: Silla de Ruedas</span>
+                    </div>
+                </div>
+
+                <button class="btn-reservar" id="btnReservar">
+                    <i class="fa-regular fa-id-card"></i> Reservar Espacio
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
